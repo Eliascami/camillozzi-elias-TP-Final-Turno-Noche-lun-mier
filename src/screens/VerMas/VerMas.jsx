@@ -28,7 +28,7 @@ const VerMas = () => {
           <h1>{productVerMas.nombre}</h1>
           <h2>PRECIO: <span className='precio'>${productVerMas.precio}</span></h2>
           <h2>MARCA: {productVerMas.marca}</h2>
-          <p>cantidad por bulto: {productVerMas.bulto}</p>
+          <p className='suave'>cantidad por bulto: {productVerMas.bulto}</p>
           <p>{productVerMas.descripcion}</p>
             {
               isInCart(id) 

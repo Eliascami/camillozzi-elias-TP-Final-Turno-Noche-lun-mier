@@ -1,6 +1,6 @@
 import React from 'react'
 import { useCustomContext } from '../../ContextManager/ContextProvider'
-import { ContainerCart, ProductCard, ProductCartCard } from '../../components'
+import { ContainerCart, ProductCard, ProductCartCard, Footer } from '../../components'
 import "./CartPage.css"
 
 const CartPage = () => {

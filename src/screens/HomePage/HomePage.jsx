@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useCustomContext } from '../../ContextManager/ContextProvider'
-import { ProductContainer, ProductCard } from '../../components'
+import { ProductContainer, ProductCard, Aside, Footer } from '../../components'
 import './HomePage.css'
 
 const HomePage = () => {
@@ -14,16 +14,23 @@ const HomePage = () => {
     }, [searchProduct])
     return (
         <div className='homePageContainer'>
-            <div className='toolTitulo'>
-                <h1 className='titulo'><span>Tools</span>Store</h1>
+            <div>
+                <input placeholder='Buscar producto por nombre' value={searchProduct} onChange={(e)=> setSearchProduct(e.target.value)}/>
             </div>
-                <input placeholder='Nombre del producto' value={searchProduct} onChange={(e)=> setSearchProduct(e.target.value)}/>
-
-            <ProductContainer>
-                {currentProducts.map(producto => (
-                    <ProductCard producto={producto} key={producto.id}/>
-                ))}
-            </ProductContainer>
+            <div className='cuerpoYaside'>
+                <div className='ProductsCuerpo'>
+                    <ProductContainer>
+                        {currentProducts.map(producto => (
+                            <ProductCard producto={producto} key={producto.id}/>
+                        ))}
+                    </ProductContainer>
+                </div>                
+                <div className='Aside'>
+                    <Aside></Aside>
+                </div>
+                
+            </div>
+            <Footer></Footer>
         </div>
     )
 }

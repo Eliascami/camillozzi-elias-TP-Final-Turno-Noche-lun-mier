@@ -12,19 +12,20 @@ const App = () => {
   return (
     <div className='body'>
       <nav className='navBar'>
-        <div>
 
+        <div className='toolTitulo'>
+          <h1 className='titulo'><span>Tools</span>Store</h1>
         </div>
 
         <div className='links'>
           <NavLink to="/" className='ancla'>
-            <i class="bi bi-house-door-fill"></i> HOME
+            <i className="bi bi-house-door-fill"></i> HOME
           </NavLink>
           <NavLink to="/cart" className='ancla'>
-            <i class="bi bi-cart-fill"></i> CARRITO
+            <i className="bi bi-cart-fill"></i> CARRITO
           </NavLink>
           <NavLink to="/contact" className='ancla'>
-            CONTACTO
+            <i className="bi bi-envelope-fill"></i> CONTACT
           </NavLink>
         </div>
       </nav>

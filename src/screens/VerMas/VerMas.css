@@ -1,21 +1,21 @@
 .verMas {
-    padding: 3rem;
+    padding: 2rem;
     margin: 0 auto;
     display: flex;
     gap: 3rem;
     background-color: white;
-    display: flex;
     width: 90vw;
-    height: 90vh;
+
     border-radius: 5rem;
 }
 
 .verMasPhoto {
-    display: flex;
+/*     display: flex;
     padding: 2rem;
     justify-content: center;
     align-items: center;
-    width: 60rem;
+    width: 60rem; */
+    flex: 1;
 }
 
 .verMasPhoto img {
@@ -27,4 +27,15 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    flex: 1;
+}
+
+@media (max-width: 400px) {
+    .verMas {
+        flex-direction: column;
+    }
+    .verMasPhoto img {
+    width: 100%;
+    height: 100%;
+}
 }

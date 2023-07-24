@@ -1,6 +1,6 @@
 .homePageContainer {
-/*     display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 .toolTitulo span {
@@ -9,6 +9,22 @@
     font-weight: 800;
     font-size: 2.5rem;
 }
+
+
+
+.cuerpoYaside {
+    display: flex; 
+}
+
+.Aside {
+    flex: 0 0 20%; 
+}
+
+.ProductsCuerpo {
+    flex: 1; 
+}
+
+
 
 @media (max-width: 400px) {
     .toolTitulo {
