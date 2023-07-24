@@ -1,0 +1,30 @@
+.verMas {
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    background-color: white;
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 5rem;
+}
+
+.verMasPhoto {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+}
+
+.verMasPhoto img {
+    width: 90%;
+    height: 90%;
+}
+
+.verMasInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

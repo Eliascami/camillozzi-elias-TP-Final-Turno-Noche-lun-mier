@@ -1,0 +1,55 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color: white;
+    gap: 1rem;
+}
+
+.productCard:hover {
+    box-shadow: 0px 0px 40px -18px rgba(0, 0, 0, 0.39),
+                0px 0px 42px -18px rgba(240, 240, 240, 0.484) inset;
+    /* border: 10px solid rgba(240, 240, 240, 0.484); */
+}
+
+.imgProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.infoProduct {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgProduct img {
+    width: 12rem;
+    height: auto;
+}
+
+.btnVerMas {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(5,123,237,1) 0%, rgba(0,212,255,1) 100%);
+    font-family: var(--fuente-botones);
+    font-weight: 800;
+    margin-top: 1rem;
+    border-radius: 1.2rem;
+    padding: .7rem;
+}
+
+
+.btnVerMas:active {
+    box-shadow: 0px 0px 42px -18px rgba(0,0,0,0.75) inset;
+}

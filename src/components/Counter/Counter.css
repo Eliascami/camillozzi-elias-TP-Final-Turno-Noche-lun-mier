@@ -1,0 +1,82 @@
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.btnComprar {
+    width: 9rem;
+    padding: .9rem;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-family: var(--fuente-botones);
+    font-weight: 800;
+    background: linear-gradient(90deg, #0872BF 0%, #0D92AF 100%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.btnComprar:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 2rem;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+.btnComprar:active::before {
+        z-index: 1;
+}
+
+.counterOne{
+    display: flex;
+    background-color: rgba(225, 225, 225, 0.694);
+    align-items: center;
+    border-radius: 1.2rem;
+    justify-content: space-between;
+    gap: .8rem;
+/*     border: 1px solid var(--azul-hover); */
+    width: 9rem;
+}
+
+.counterOne button {
+    width: 2rem;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    background-color: var(--azul-hover);
+    font-weight: 800;
+    font-size: 2rem;
+    width: 2rem;
+}
+
+.counterOne button:active {
+    color: var(--azul-hover);
+    background-color: white;
+}
+
+.counterOne span {
+    color: var(--rojo-boton);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
