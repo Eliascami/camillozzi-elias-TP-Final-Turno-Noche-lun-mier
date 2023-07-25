@@ -1,4 +1,49 @@
-.footer {
+.Footer {
+    padding: 2rem 10rem;
     display: flex;
-    height: 20rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+/*     height: 15rem; */
+    flex-direction: row;
+    color: var(--letras);
+    background-color: rgba(174, 179, 204, 0.228);
+    margin-top: 3rem;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.redes a {
+    color: var(--letras);
+    text-decoration: none;
+}
+
+.redes .bi {
+    font-size: 1.2rem;
+}
+
+.aboutUs a {
+    text-decoration: none;
+    color: var(--letras);
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: var(--letras);
 }

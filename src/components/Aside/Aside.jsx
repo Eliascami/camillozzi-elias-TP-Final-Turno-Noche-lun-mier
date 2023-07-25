@@ -14,6 +14,27 @@ const Aside = () => {
                         <input type="checkbox" /> B+D
                     </label>
                     <label htmlFor="">
+                        <input type="checkbox" /> CROSSMASTER
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> ROSARPIN
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> BOSCH
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> MAKITA
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> DREMEL
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> KNIPEX
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> DEWALT
+                    </label>
+                    <label htmlFor="">
                         <input type="checkbox" /> DEWALT
                     </label>
                 </div>
