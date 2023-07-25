@@ -5,25 +5,31 @@ const Aside = () => {
     <div className='Filtrador'>
         <form action="" className='divsAside'>
             <div className='marca'>
-                <h3>FILTRAR POR MARCA:</h3>
-                <label htmlFor="">
-                    <input type="checkbox" /> STANLEY
-                </label>
-                <label htmlFor="">
-                    <input type="checkbox" /> B+D
-                </label>
-                <label htmlFor="">
-                    <input type="checkbox" /> DEWALT
-                </label>
+                <h4>FILTRAR POR MARCA:</h4>
+                <div  className='filterContainer'>
+                    <label htmlFor="">
+                        <input type="checkbox" /> STANLEY
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> B+D
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> DEWALT
+                    </label>
+                </div>
             </div>
             <div className='rubro'>
-                <h3>FILTRAR POR CATEGORIA</h3>
-                <label htmlFor="">
-                    <input type="checkbox" /> ELECTRICA
-                </label>
-                <label htmlFor="">
-                    <input type="checkbox" /> DE MANO
-                </label>
+                <div className='rubroTitulo'>
+                    <h4>FILTRAR POR CATEGORIA:</h4>
+                </div>
+                <div className='filterContainer'>
+                    <label htmlFor="">
+                        <input type="checkbox" /> ELECTRICA
+                    </label>
+                    <label htmlFor="">
+                        <input type="checkbox" /> DE MANO
+                    </label>
+                </div>
             </div>
         </form>
     </div>

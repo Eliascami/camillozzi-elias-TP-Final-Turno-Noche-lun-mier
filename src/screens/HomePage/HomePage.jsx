@@ -14,10 +14,14 @@ const HomePage = () => {
     }, [searchProduct])
     return (
         <div className='homePageContainer'>
-            <div>
+            <div className='filter'>
+                <i className="bi bi-search"></i>
                 <input placeholder='Buscar producto por nombre' value={searchProduct} onChange={(e)=> setSearchProduct(e.target.value)}/>
             </div>
             <div className='cuerpoYaside'>
+                <div className='Aside'>
+                    <Aside></Aside>
+                </div>
                 <div className='ProductsCuerpo'>
                     <ProductContainer>
                         {currentProducts.map(producto => (
@@ -25,9 +29,7 @@ const HomePage = () => {
                         ))}
                     </ProductContainer>
                 </div>                
-                <div className='Aside'>
-                    <Aside></Aside>
-                </div>
+
                 
             </div>
             <Footer></Footer>

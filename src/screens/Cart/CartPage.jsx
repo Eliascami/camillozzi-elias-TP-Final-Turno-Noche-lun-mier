@@ -8,16 +8,22 @@ const CartPage = () => {
     console.log(getTotal())
 
     return (
-        <div>
-            <h2>EN EL CARRITO:</h2>
+        <div className='cartPage'>
+            <div className='tituloCarrito'>
+                <h2>EN EL CARRITO:</h2>
+            </div>
             <ContainerCart>
                 {cart.map(product => (
                     <ProductCartCard key={product.id} producto={product}/>
                 ))}
             </ContainerCart>
-            <div>
+            <div className='total'>
                 <h3>TOTAL: ${getTotal()}</h3>
+                <div className='comprar'>
+                    <button className='btnComprar'>COMPRAR </button>
+                </div>                
             </div>
+
         </div>
     )
 }

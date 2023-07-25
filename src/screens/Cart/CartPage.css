@@ -1,0 +1,29 @@
+.cartPage {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tituloCarrito {
+    display: flex;
+    margin: 0 auto;
+}
+
+.total {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.total h3 {
+    color: var(--rojo-boton);
+}
+
+@media (max-width: 600px) {
+    .tituloCarrito {
+        margin: 2rem auto;
+    }
+}

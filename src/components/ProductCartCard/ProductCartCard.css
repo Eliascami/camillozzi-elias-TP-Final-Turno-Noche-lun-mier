@@ -10,6 +10,8 @@
     background-color: white;
     gap: 1rem;
     margin-top: 2rem;
+    box-shadow: 0px 0px 40px -18px rgba(0, 0, 0, 0.39),
+                0px 0px 42px -18px rgba(240, 240, 240, 0.484) inset;
 }
 
 .cartImg {

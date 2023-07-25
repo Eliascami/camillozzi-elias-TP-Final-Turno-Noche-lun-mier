@@ -28,6 +28,7 @@ const App = () => {
             <i className="bi bi-envelope-fill"></i> CONTACT
           </NavLink>
         </div>
+        
       </nav>
 
       <Routes>

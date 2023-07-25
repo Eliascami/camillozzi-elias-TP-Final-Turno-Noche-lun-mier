@@ -30,6 +30,7 @@
 
 .navBar {
     margin-right: 3rem;
+    margin-left: 3rem;
     margin-bottom: 3rem;
     padding-top: 1.5rem;
     display: flex;
@@ -67,4 +68,25 @@
 .suave {
     color: var(--letras);
     font-family: var(--fuente-secundaria);
+}
+
+.toolTitulo h1 {
+    color: var(--azul-oscuro);
+}
+
+.toolTitulo span {
+    font-family: var(--fuente-secundaria);
+    color: var(--rojo-boton);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 600px) {
+    .navBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
 }
